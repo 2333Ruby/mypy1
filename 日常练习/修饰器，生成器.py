@@ -38,7 +38,7 @@ def index():
 index()
 # 调用 index() 函数时，会自动将其转换成 timer(index)() 这样的形式，将 index 函数作为参数传递给 timer() 函数，并将返回值再次作为函数调用。由于 timer() 函数返回了一个闭包函数
 # wrapper()，所以最终的函数调用结果就是执行了闭包函数 wrapper()
-
+'''
 
 from types import MethodType
 
@@ -62,7 +62,7 @@ print(s1.name)
 s2.set_name_func('s2')  # 会报错,因为set_name方法在实例间不共享
 print(s2.name)
 
-output:
+'''output:
 s1
 AttributeError: 'Student'
 object
@@ -70,7 +70,7 @@ has
 no
 attribute
 'set_name_func'
-
+'''
 from types import MethodType
 
 
@@ -100,3 +100,4 @@ print(s3.name)
 # 2
 # 2
 # 2
+'''
